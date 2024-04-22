@@ -1,0 +1,43 @@
+
+.home h2{
+    font-size: 2rem;
+    margin: 1rem 0;
+    text-align: start;
+    color: #1E414C;
+}
+
+.home p{
+    font-size: 1rem;
+    margin: 1rem 0;
+    text-align: start;
+    color: #1E414C;
+}
+
+.home img{
+    width: 75%;
+    height: auto;
+    margin: 3rem 0;
+}
+
+.content{
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+.bouton1{
+    background-color: #1E414C;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.envie_title{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    text-align: center;
+    color: #1E414C;
+}

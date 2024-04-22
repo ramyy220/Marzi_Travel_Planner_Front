@@ -3,6 +3,7 @@ import './header.css';
 import { NavLink } from 'react-router-dom';
 import logo from '../../assets/images/Logo.jpeg';
 import { Container, Row } from 'reactstrap';
+import { motion } from 'framer-motion'; // Importez motion directement
 
 const Header = () => {
   return (
@@ -31,9 +32,9 @@ const Header = () => {
               <button className="inscription__button">Inscription</button>
             </div>
             <div className="nav__icons">
-              <span className="user__icon">
-                <i className="ri-shield-user-line"></i> 
-              </span>
+              <motion.span whileHover={{ scale : 1.2 }} className="user__icon">
+                <i  className="ri-shield-user-line"></i> 
+              </motion.span>
               <div className="mobile__menu">
                 <i className="ri-menu-line"></i> 
               </div>
