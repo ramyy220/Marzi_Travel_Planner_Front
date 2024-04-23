@@ -1,4 +1,3 @@
-
 .home h2{
     font-size: 2rem;
     margin: 1rem 0;
@@ -36,8 +35,63 @@
 }
 
 .envie_title{
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 1rem 0;
+    text-align: center;
+    color: #1E414C;
+}
+
+.envies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-height: 550px;
+    background-color: #1E414C;
+}
+
+.envies .carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.envies .carousel-item img {
+    width: 100%;
+    max-height: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.envies .carousel-item.patrimoine img {
+    width: 100%;
+    max-height: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.envies .carousel-item-title {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    text-align: center;
+    color: white !important;
+}
+
+.envies .carousel-item-description {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    text-align: center;
+    color: #1E414C;
+}
+
+.destinations{
+    font-size: 2rem;
+    margin: 3rem 0;
     text-align: center;
     color: #1E414C;
 }
