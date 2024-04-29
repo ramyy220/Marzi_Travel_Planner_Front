@@ -1,16 +1,16 @@
 .destination__item {
     cursor: pointer;
-    border: 1px solid #ccc; /* Ajout d'une bordure légère */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Ajout d'une ombre portée pour un effet de profondeur */
-    border-radius: 8px; /* Bords arrondis pour un look plus doux */
-    margin: 20px; /* Ajoute une marge autour de chaque carte */
-    padding: 20px; /* Espacement à l'intérieur de la carte */
-    background-color: #fff; /* Fond blanc pour la carte */
-    transition: box-shadow 0.3s ease-in-out; /* Transition pour l'effet hover */
+    border: 1px solid #ccc; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px; 
+    margin: 20px; 
+    padding: 20px; 
+    background-color: #fff; 
+    transition: box-shadow 0.3s ease-in-out; 
 }
 
 .destination__item:hover {
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Ombre plus profonde lors du survol */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); 
 }
 
 .destination__info h3 {

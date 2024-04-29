@@ -1,0 +1,57 @@
+.footer {
+    position: relative; 
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .footer img {
+    width: 100%; 
+    height: 100%;
+    vertical-align: middle;
+
+  }
+  
+  .footer h2 {
+    position: absolute; 
+    top: 10%; 
+    left: 0;
+    width: 100%;
+    font-size: 1.5rem; 
+    color: #1E414C;
+  }
+  
+ 
+  .footer p {
+    position: absolute; 
+    top: 30%; 
+    width: 100%;
+    font-size: 1rem; 
+    color: #1E414C;
+    
+  }
+  
+
+  .footer button {
+    position: absolute;
+    top: 70%; 
+    left: 45%;
+    padding: 10px 20px; 
+    font-size: 1em; 
+    cursor: pointer; 
+    background-color: #00A0B1;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .footer .copy{
+    position: absolute; 
+    top: 90%; 
+    width: 100%;
+    font-size: 1rem; 
+    color: #1E414C;
+  }
+  

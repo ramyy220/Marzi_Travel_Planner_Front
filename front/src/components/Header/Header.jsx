@@ -1,11 +1,24 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './header.css';
 import { NavLink } from 'react-router-dom';
 import logo from '../../assets/images/Logo.jpeg';
 import { Container, Row } from 'reactstrap';
-import { motion } from 'framer-motion'; // Importez motion directement
+import { motion } from 'framer-motion';
+
+const nav_link = [
+  { display: 'HOME', path: 'Home' },
+  { display: 'SERVICES', path: 'Services' },
+  { display: 'CONTACT', path: 'Contact' },
+];
 
 const Header = () => {
+
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <header className="header">
       <Container>
@@ -16,28 +29,38 @@ const Header = () => {
             </div>
             <div className="navigation">
               <ul className="menu">
-                <li className="nav__item"> 
-                  <NavLink to="Home" exact>HOME</NavLink>
-                </li>
-                <li className="nav__item">
-                  <NavLink to="Services" exact>SERVICES</NavLink>
-                </li>
-                <li className="nav__item"> 
-                  <NavLink to="Contact" exact>CONTACT</NavLink>
-                </li>
+                {nav_link.map((item, index) =>(
+                  <li className="nav__item" key={index}>
+                    <NavLink to={item.path} className={(navClass) => navClass.isActive ? 'nav__active': ''}>{item.display}</NavLink>
+                  </li>
+                ))}
               </ul>
             </div>
             <div className="nav__buttons">
-              <button className="connection__button">Connexion</button>
-              <button className="inscription__button">Inscription</button>
+              <motion.button whileHover={{scale:1.1}} className="connection__button">Connexion</motion.button>
+              <motion.button whileTap={{scale:1.2}}className="inscription__button">Inscription</motion.button>
             </div>
             <div className="nav__icons">
               <motion.span whileHover={{ scale : 1.2 }} className="user__icon">
                 <i  className="ri-shield-user-line"></i> 
               </motion.span>
-              <div className="mobile__menu">
-                <i className="ri-menu-line"></i> 
-              </div>
+              <motion.div className="mobile__menu" whileTap={{ scale: 1.1 }}>
+                <i className="ri-menu-line" onClick={toggleMobileMenu}></i> 
+             </motion.div>
+             {isMobileMenuOpen && (
+                <div className="mobile__nav">
+                <ul className="mobile__nav-menu">
+                 {nav_link.map((item, index) => (
+                  <li className="nav__item" key={index}>
+                   <NavLink to={item.path} onClick={() => setMobileMenuOpen(false)}>
+                    {item.display}
+                   </NavLink>
+                 </li>
+              ))}
+            </ul>
+             </div>
+            )}
+
             </div>
           </div>
         </Row>

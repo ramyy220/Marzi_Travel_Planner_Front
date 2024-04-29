@@ -106,6 +106,57 @@ const Home = () => {
           <DestinationsList data={data} />
         </Row>
       </Container>
+
+
+      <Row>
+          <Col lg='12'>
+            <h1 className='features'>Nos fonctionnalitées</h1>
+          </Col>
+        </Row>
+      <div className="features-section">
+      <Container>
+        <Row>
+          <Col lg='6' md='6' sm='12' className="mb-3">
+            <div className="feature-item">
+              <motion.span whileHover={{ scale: 1.2 }} className="icon">
+                <i className="ri-user-smile-line"></i>
+              </motion.span>
+              <h5>Profil Personnalisé</h5>
+              <p>Créez votre profil unique et laissez "En recherche" vous guider vers des destinations et des expériences qui correspondent à votre style.</p>
+            </div>
+          </Col>
+          <Col lg='6' md='6' sm='12' className="mb-3">
+            <div className="feature-item">
+              <motion.span whileHover={{ scale: 1.2 }} className="icon">
+                <i className="ri-flight-takeoff-line"></i>
+              </motion.span>
+              <h5>Réservations Facilitées</h5>
+              <p>Réservez vols, hébergements et activités directement depuis l'application, en quelques clics.</p>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col lg='6' md='6' sm='12' className="mb-3">
+            <div className="feature-item">
+              <motion.span whileHover={{ scale: 1.2 }} className="icon">
+                <i className="ri-map-pin-line"></i>
+              </motion.span>
+              <h5>Planification Intelligente</h5>
+              <p>Notre algorithme intelligent crée des itinéraires optimisés, des vols abordables et des hébergements parfaits pour vous.</p>
+            </div>
+          </Col>
+          <Col lg='6' md='6' sm='12' className="mb-3">
+            <div className="feature-item">
+              <motion.span whileHover={{ scale: 1.2 }} className="icon">
+                <i className="ri-hand-coin-line"></i>
+              </motion.span>
+              <h5>Suivi Des Dépenses</h5>
+              <p>Gérez votre budget avec précision grâce à notre outil de suivi des dépenses intégré.</p>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </div>
     </Helmet>
   );
 }
