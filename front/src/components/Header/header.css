@@ -65,6 +65,11 @@
     margin-bottom: 10px;
 }
 
+.nav__buttons a, .nav__buttons a:visited {
+  text-decoration: none;
+}
+
+
 .connection__button {
     background-color: #1E414C;
     color: #F2FEFA;
@@ -129,6 +134,11 @@
   .mobile__nav-menu li:last-child {
     margin-bottom: 0;
   }
+
+  .user__icon {
+    font-size: 2rem;
+    color: #1E414C;
+}
   
 
   @media (max-width: 768px) {
@@ -149,6 +159,58 @@
     .mobile__menu {
       display: block;
     }
+  }
+
+  .user__button {
+    background-color: #1E414C;
+    color: #F2FEFA;
+    padding: 0.5rem 0.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+  }
+  
+  .user__menu-list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #1E414C;
+    display: none;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    width: 150px;
+  }
+  
+  .user__menu-list.show {
+    display: block;
+  }
+  
+  .user__menu-list a, .user__menu-list button {
+    display: block;
+    color: #F2FEFA;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  
+  .user__menu-list a:hover, .user__menu-list button:hover {
+    background-color: #12393B;
+  }
+  
+  .btn_btn{
+    background-color: transparent;
+    color: #F2FEFA;
+    padding: 0.5rem 0.5rem;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+    text-align: center;
+    width: 100%;
   }
   
   /* Media Query for Mobile Phones */

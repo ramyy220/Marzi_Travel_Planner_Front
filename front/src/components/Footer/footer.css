@@ -54,4 +54,10 @@
     font-size: 1rem; 
     color: #1E414C;
   }
+
+  .footer a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+  }
   

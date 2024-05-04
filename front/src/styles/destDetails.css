@@ -1,0 +1,87 @@
+.destDetails h2, .destDetails p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    text-align: left;
+    color: #333; 
+}
+
+.destDetails p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.destDetails img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.destDetails .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: flex-start;
+    gap: 20px; 
+    padding: 2rem;
+}
+
+.destDetails .button {
+    background-color: #1E414C;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 12px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.destDetails .button:hover {
+    background-color: #163137;
+}
+
+.destDetails .title {
+    font-size: 2.5rem; 
+    margin: 1rem 0;
+    text-align: center;
+    color: #1E414C;
+}
+
+.destDetails .features {
+    background-color: #f8f9fa; 
+    padding: 4rem 0; 
+    color: #333; 
+}
+
+.destDetails .features h2, .destDetails .features p {
+    text-align: center;
+    color: #1E414C; 
+}
+
+.destDetails .features .feature-item {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12); 
+    margin: 2rem; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.destDetails .features .feature-item:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+@media (max-width: 767px) {
+    .destDetails .container {
+        flex-direction: column; 
+    }
+
+    .destDetails .features .feature-item {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%; 
+    }
+}
