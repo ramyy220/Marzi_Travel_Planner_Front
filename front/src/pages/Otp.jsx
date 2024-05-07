@@ -10,12 +10,12 @@ import { useNavigate } from 'react-router-dom';
 import '../styles/login.css';
 
 const VerifyOTP = () => {
-    const [otp, setOtp] = useState('');
+    const [code, setOtp] = useState('');
     const navigate = useNavigate(); 
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        API.post('/auth/forgotPasswordConf', { otp })
+        API.post('/auth/forgotPasswordConf', { code })
             .then(response => {
                 console.log('OTP Verified:', response.data);
                 toast.success('OTP verified successfully!', {
@@ -41,7 +41,7 @@ const VerifyOTP = () => {
                         <Form className='auth__form' onSubmit={handleSubmit}>
                             <FormGroup className='auth__group'>
                                 <label>OTP Code</label>
-                                <input type="text" className="form-control" placeholder='Enter your OTP' value={otp} onChange={e => setOtp(e.target.value)} />
+                                <input type="text" className="form-control" placeholder='Enter your OTP' value={code} onChange={e => setOtp(e.target.value)} />
                             </FormGroup>
                             <motion.button whileTap={{scale: 1.1}} type='submit' className="auth__btn">Verify OTP</motion.button>
                         </Form>

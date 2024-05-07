@@ -71,7 +71,7 @@ const Header = () => {
         <motion.button whileHover={{ scale: 1.1 }} className="connection__button">Login</motion.button>
       </Link>
       <Link to='/signup'>
-        <motion.button whileTap={{ scale: 1.2 }} className="inscription__button">SignUp</motion.button>
+        <motion.button whileTap={{ scale: 1.2 }} className="inscription__button">Signup</motion.button>
       </Link>
     </>
   ) : (

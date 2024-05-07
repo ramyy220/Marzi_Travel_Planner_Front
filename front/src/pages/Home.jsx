@@ -64,7 +64,7 @@ const Home = () => {
                 <p className="subtitle">MTP Destinations sur-mesure</p>
                 <h2>Vous rêvez de nouvelles aventures ?</h2>
                 <p>Bienvenue sur "MARZI TP", votre partenaire ultime pour des voyages inoubliables et sur mesure ! Explorez le monde en toute simplicité, avec un compagnon qui planifie, personnalise et optimise chaque étape de votre aventure.</p>
-                <motion.button whileTap={{ scale: 1.2 }} className='bouton1' onClick={() => window.location.href = '/services'}>Commencer l'aventure </motion.button>
+                <motion.button whileTap={{ scale: 1.2 }} className='bouton1' onClick={() => window.location.href = '/questions'}>Commencer l'aventure </motion.button>
               </div>
             </Col>
             <Col lg='6' md='6'>

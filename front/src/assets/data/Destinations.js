@@ -18,6 +18,16 @@ import destinationImg17 from "../images/destinationImg17.webp";
 import destinationImg18 from "../images/destinationImg18.webp";
 import destinationImg19 from "../images/destinationImg19.webp";
 import destinationImg20 from "../images/destinationImg20.webp";
+import destinationImg21 from "../images/destinationImg21.webp";
+import destinationImg22 from "../images/destinationImg22.webp";
+import destinationImg23 from "../images/destinationImg23.webp";
+import destinationImg24 from "../images/destinationImg24.webp";
+import destinationImg25 from "../images/destinationImg25.webp";
+import destinationImg26 from "../images/destinationImg26.webp";
+import destinationImg27 from "../images/destinationImg27.webp";
+import destinationImg28 from "../images/destinationImg28.webp";
+import destinationImg29 from "../images/destinationImg29.webp";
+import destinationImg30 from "../images/destinationImg30.webp";
 
 const destinations = [
   {
@@ -260,6 +270,127 @@ const destinations = [
     price: 210,
     adventureType: "cultural"
   },
+  {
+    id: "21",
+    destinationName: "Coachella",
+    imgUrl: destinationImg21,
+    country: "USA",
+    continent: "North America",
+    category: "destinations",
+    description: "Home to the annual Coachella Valley Music and Arts Festival, Coachella offers vibrant musical and artistic experiences.",
+    rating: 4.8,
+    price: 450,
+    adventureType: "festival"
+  },
+  {
+    id: "22",
+    destinationName: "Patagonia",
+    imgUrl: destinationImg22,
+    country: "Argentina",
+    continent: "South America",
+    category: "destinations",
+    description: "Patagonia is a remote region known for its breathtaking landscapes and outdoor adventures including hiking and climbing.",
+    rating: 4.9,
+    price: 500,
+    adventureType: "adventure"
+  },
+  {
+    id: "23",
+    destinationName: "Banff",
+    imgUrl: destinationImg23,
+    country: "Canada",
+    continent: "North America",
+    category: "destinations",
+    description: "Located in the heart of the Canadian Rockies, Banff National Park is famous for its stunning wilderness, wildlife, and outdoor sports.",
+    rating: 4.7,
+    price: 400,
+    adventureType: "nature"
+  },
+  {
+    id: "24",
+    destinationName: "Cinque Terre",
+    imgUrl: destinationImg24,
+    country: "Italy",
+    continent: "Europe",
+    category: "destinations",
+    description: "Cinque Terre, a string of centuries-old seaside villages on the rugged Italian Riviera coastline, is known for its colorful houses and vineyards clutched to steep terraces.",
+    rating: 4.6,
+    price: 350,
+    adventureType: "cultural"
+  },
+  {
+    id: "25",
+    destinationName: "Santorini",
+    imgUrl: destinationImg25,
+    country: "Greece",
+    continent: "Europe",
+    category: "destinations",
+    description: "Santorini is celebrated for its cliffside homes painted in stark white with bright blue roofs, stunning sunsets, and volcanic-sand beaches.",
+    rating: 4.8,
+    price: 550,
+    adventureType: "relaxation"
+  },
+  {
+    id: "26",
+    destinationName: "Yellowstone",
+    imgUrl: destinationImg26,
+    country: "USA",
+    continent: "North America",
+    category: "destinations",
+    description: "Yellowstone National Park is famed for its geothermal features and an array of wildlife including buffalo, bears, and wolves.",
+    rating: 4.9,
+    price: 300,
+    adventureType: "adventure"
+  },
+  {
+    id: "27",
+    destinationName: "Galápagos Islands",
+    imgUrl: destinationImg27,
+    country: "Ecuador",
+    continent: "South America",
+    category: "destinations",
+    description: "The Galápagos Islands are a volcanic archipelago in the Pacific Ocean considered one of the world's foremost destinations for wildlife-viewing.",
+    rating: 4.9,
+    price: 600,
+    adventureType: "nature"
+  },
+  {
+    id: "28",
+    destinationName: "Tuscany",
+    imgUrl: destinationImg28,
+    country: "Italy",
+    continent: "Europe",
+    category: "destinations",
+    description: "Tuscany is a region in central Italy known for its picturesque landscapes, rich history, culture, gastronomy, and influential art.",
+    rating: 4.7,
+    price: 420,
+    adventureType: "cultural"
+  },
+  {
+    id: "29",
+    destinationName: "Fiji",
+    imgUrl: destinationImg29,
+    country: "Fiji",
+    continent: "Oceania",
+    category: "destinations",
+    description: "Fiji is an archipelago in the South Pacific, renowned for its crystal clear waters, coral reefs, and pristine sandy beaches.",
+    rating: 4.8,
+    price: 650,
+    adventureType: "relaxation"
+  },
+  {
+    id: "30",
+    destinationName: "Provence",
+    imgUrl: destinationImg30,
+    country: "France",
+    continent: "Europe",
+    category: "destinations",
+    description: "Provence is famous for its diverse landscapes, from the Southern Alps and Camargue plains to vineyards, olive groves, and lavender fields.",
+    rating: 4.6,
+    price: 350,
+    adventureType: "cultural"
+  }
 ];
+
 
 export default destinations;

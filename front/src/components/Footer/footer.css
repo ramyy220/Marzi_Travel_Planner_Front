@@ -1,21 +1,15 @@
 .footer {
     position: relative; 
     text-align: center;
-    color: white;
     width: 100%;
-    margin-top: 50px;
-  }
-
-  .footer img {
-    width: 100%; 
-    height: 100%;
-    vertical-align: middle;
+    padding: 2rem 0 !important;
+    background-image: url("../../assets/images/footer.png");
 
   }
+
+  
   
   .footer h2 {
-    position: absolute; 
-    top: 10%; 
     left: 0;
     width: 100%;
     font-size: 1.5rem; 
@@ -24,8 +18,6 @@
   
  
   .footer p {
-    position: absolute; 
-    top: 30%; 
     width: 100%;
     font-size: 1rem; 
     color: #1E414C;
@@ -34,9 +26,7 @@
   
 
   .footer button {
-    position: absolute;
-    top: 70%; 
-    left: 45%;
+    
     padding: 10px 20px; 
     font-size: 1em; 
     cursor: pointer; 
@@ -45,11 +35,10 @@
     font-weight: bold;
     border: none;
     border-radius: 5px;
+    width: 260px;
   }
 
-  .footer .copy{
-    position: absolute; 
-    top: 90%; 
+  .copy{
     width: 100%;
     font-size: 1rem; 
     color: #1E414C;

@@ -12,6 +12,7 @@ import VerifyOTP from '../pages/Otp';
 import ResetPassword from '../pages/ResetPassword';
 import Profile from '../pages/Profile';
 import PrivateRoute from './PrivateRouter';
+import Questions from '../pages/Questions';
 
 
 
@@ -28,6 +29,7 @@ const Routers = () => {
     <Route path="/verifyotp" element={<VerifyOTP />} />
     <Route path="/resetpassword" element={<ResetPassword />} />
     <Route path="/profile" element={<PrivateRoute component={Profile} />} />
+    <Route path="/questions" element={<Questions />} />
   </Routes>;
 };
 

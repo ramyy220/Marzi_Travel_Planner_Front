@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col, Form, FormGroup } from 'reactstrap';
-import axios from 'axios';
 import '../styles/login.css'; 
+import API from '../apiNest/Api';
 
 const Profile = () => {
   const [user, setUser] = useState(null);
@@ -30,23 +30,25 @@ const Profile = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.put('/auth/updateProfile', {
+      const response = await API.put('/auth/updateProfile', {
         userId: user.userId, 
         username,
         password
-      });
-      if (response.data.success) {
-        setUser(response.data.user);
-        localStorage.setItem('userInfo', JSON.stringify(response.data.user));
-        alert('Profile updated successfully!');
-      } else {
-        alert('Failed to update profile.');
-      }
+    }, {
+        headers: {
+            'Content-Type': 'application/json', 
+            'Authorization': `Bearer ${localStorage.getItem('token')}`
+        }
+    });
+    
+    console.log('Update Profile:', response.message);
+    localStorage.setItem('userInfo', JSON.stringify(response.data));
+    alert('Profile updated successfully!');
     } catch (error) {
-      console.error('Error updating profile:', error);
-      alert('Error updating profile.');
+      console.error('Update Profile error:', error);
+      alert('An error occurred. Please try again.');
     }
-  };
+  }
 
   if (!user) {
     return <div>Loading...</div>;

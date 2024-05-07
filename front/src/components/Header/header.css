@@ -1,230 +1,230 @@
 .header {
-    width: 100%;
-    height: 100%;
-    background-color: #F2FEFA;
+  width: 100%;
+  height: 100%;
+  background-color: #F2FEFA;
 }
 
 .nav__wrapper {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    column-gap: 8px;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
 }
 
 .logo img {
-    width: 90px;
-    height: 90px;
+  width: 90px;
+  height: 90px;
 }
 
 .navigation{
-    display: flex;
-    align-items: center;
-    column-gap: 2.7rem;
-    margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  column-gap: 2.7rem;
+  margin-left: 2rem;
 }
 
 .menu {
-    display: flex;
-    align-items: center;
-    column-gap: 2.7rem;
+  display: flex;
+  align-items: center;
+  column-gap: 2.7rem;
 }
 
 .nav__item a {
-    text-decoration: none;
-    color: #1E414C;
-    cursor: pointer;
-    font-size: 14px;
+  text-decoration: none;
+  color: #1E414C;
+  cursor: pointer;
+  font-size: 14px;
 }
 
 .nav__icons {
-    display: flex;
-    align-items: center;
-    column-gap: 1.2rem;
-    margin-left: auto;
-    margin-bottom: 10px;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  column-gap: 1.2rem;
+  margin-left: auto;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .nav__icons span i {
-    font-size: 2rem;
-    cursor: pointer;
-    color: #1E414C;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #1E414C;
 }
 
 .nav__buttons {
-    display: flex;
-    align-items: center;
-    column-gap: 1.2rem;
-    margin-left: 400px;
-    margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 1.2rem;
+  margin-left: 400px;
+  margin-bottom: 10px;
 }
 
 .nav__buttons a, .nav__buttons a:visited {
-  text-decoration: none;
+text-decoration: none;
 }
 
 
 .connection__button {
-    background-color: #1E414C;
-    color: #F2FEFA;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s;
+  background-color: #1E414C;
+  color: #F2FEFA;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 .inscription__button {
-    background-color: #F2FEFA;
-    color: #1E414C;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s;
+  background-color: #F2FEFA;
+  color: #1E414C;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 .inscription__button:hover {
-    background-color: #1E414C;
-    color: #F2FEFA;
+  background-color: #1E414C;
+  color: #F2FEFA;
 }
 
 
 .mobile__menu {
-    font-size: 1.5rem;
-    display: none;
+  font-size: 1.5rem;
+  display: none;
 }
 
 
 .nav__active{
-    font-weight: 700 !important;
+  font-weight: 700 !important;
 }
 
 .mobile__nav {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  .mobile__nav-menu {
-    background-color: #FFF;
-    padding: 2rem;
-    border-radius: 10px;
-    width: auto;
-    list-style: none;
-  }
-  
-  .mobile__nav-menu li {
-    margin-bottom: 1rem;
-  }
-  
-  .mobile__nav-menu li:last-child {
-    margin-bottom: 0;
-  }
-
-  .user__icon {
-    font-size: 2rem;
-    color: #1E414C;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
-  
 
-  @media (max-width: 768px) {
-    .nav__wrapper {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .navigation, .menu {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .nav__buttons {
-      margin-left: 0;
-    }
-  
-    .mobile__menu {
-      display: block;
-    }
+.mobile__nav-menu {
+  background-color: #FFF;
+  padding: 2rem;
+  border-radius: 10px;
+  width: auto;
+  list-style: none;
+}
+
+.mobile__nav-menu li {
+  margin-bottom: 1rem;
+}
+
+.mobile__nav-menu li:last-child {
+  margin-bottom: 0;
+}
+
+.user__icon {
+  font-size: 2rem;
+  color: #1E414C;
+}
+
+
+@media (max-width: 768px) {
+  .nav__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .user__button {
-    background-color: #1E414C;
-    color: #F2FEFA;
-    padding: 0.5rem 0.5rem;
-    border-radius: 5px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s;
-    position: relative;
+  .navigation, .menu {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
-  .user__menu-list {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #1E414C;
-    display: none;
-    border-radius: 5px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    padding: 0.5rem 0;
-    width: 150px;
+
+  .nav__buttons {
+    margin-left: 0;
   }
-  
-  .user__menu-list.show {
+
+  .mobile__menu {
     display: block;
   }
-  
-  .user__menu-list a, .user__menu-list button {
-    display: block;
-    color: #F2FEFA;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    transition: all 0.3s;
+}
+
+.user__button {
+  background-color: #1E414C;
+  color: #F2FEFA;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.user__menu-list {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #1E414C;
+  display: none;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  width: 150px;
+}
+
+.user__menu-list.show {
+  display: block;
+}
+
+.user__menu-list a, .user__menu-list button {
+  display: block;
+  color: #F2FEFA;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.user__menu-list a:hover, .user__menu-list button:hover {
+  background-color: #12393B;
+}
+
+.btn_btn{
+  background-color: transparent;
+  color: #F2FEFA;
+  padding: 0.5rem 0.5rem;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+/* Media Query for Mobile Phones */
+@media (max-width: 480px) {
+  .logo img {
+    width: 60px;
+    height: 60px;
   }
-  
-  .user__menu-list a:hover, .user__menu-list button:hover {
-    background-color: #12393B;
+
+  .navigation {
+    margin-left: 0;
   }
-  
-  .btn_btn{
-    background-color: transparent;
-    color: #F2FEFA;
-    padding: 0.5rem 0.5rem;
-    border: none;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s;
-    position: relative;
-    text-align: center;
-    width: 100%;
+
+  .nav__item a {
+    font-size: 12px;
   }
-  
-  /* Media Query for Mobile Phones */
-  @media (max-width: 480px) {
-    .logo img {
-      width: 60px;
-      height: 60px;
-    }
-  
-    .navigation {
-      margin-left: 0;
-    }
-  
-    .nav__item a {
-      font-size: 12px;
-    }
-  }
+}
