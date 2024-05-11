@@ -13,7 +13,8 @@ import ResetPassword from '../pages/ResetPassword';
 import Profile from '../pages/Profile';
 import PrivateRoute from './PrivateRouter';
 import Questions from '../pages/Questions';
-
+import Map from '../pages/Map';
+import Result from '../pages/Result';
 
 
 const Routers = () => {
@@ -30,6 +31,8 @@ const Routers = () => {
     <Route path="/resetpassword" element={<ResetPassword />} />
     <Route path="/profile" element={<PrivateRoute component={Profile} />} />
     <Route path="/questions" element={<Questions />} />
+    <Route path="/map" element={<Map />} />
+    <Route path="/result" element={<Result />} />
   </Routes>;
 };
 

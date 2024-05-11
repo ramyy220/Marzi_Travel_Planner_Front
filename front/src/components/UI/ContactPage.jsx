@@ -1,33 +1,35 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import '../../styles/contact.css';
+import API from '../../apiNest/Api';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Traiter les données du formulaire ici ou les envoyer à un serveur
-    console.log(formData);
-    alert('Message envoyé!');
-    // Réinitialiser le formulaire
-    setFormData({
       name: '',
       email: '',
       message: ''
-    });
+  });
+
+  const handleChange = (e) => {
+      setFormData({...formData, [e.target.name]: e.target.value});
+  };
+
+  const handleSubmit = (event) => {
+      event.preventDefault();
+      API.post('/auth/contact', formData)
+      .then(response => {
+          console.log('Message envoyé:', response.data);
+          alert('Message envoyé!');
+          // Réinitialiser le formulaire
+          setFormData({
+              name: '',
+              email: '',
+              message: ''
+          });
+      })
+      .catch((error) => {
+          console.error('Error:', error);
+      });
   };
 
   return (

@@ -17,18 +17,28 @@ const Login = () => {
     const navigate = useNavigate(); 
 
     const handleSubmit = (event) => {
+        // recuperer depuis le local storage si l'utilisateur a dejaa fait un parcours
+        const recommandations = localStorage.getItem('recommandations'); 
+        let url = '/result';
+        //si oui nous le redirigeons vers le questionnaire
+        if(!recommandations ){
+            url = '/home';
+        }
+        //sinon nous le redirigeons vers la page d'accueil
+        
         event.preventDefault();
         API.post('/auth/signin', { email, password })
     .then(response => {
         console.log('Login:', response.data);
         toast.success('Login successful!', {
             icon: '✅',
-            onClose: () => navigate('/home') 
+            onClose: () => navigate(url) 
         });
         localStorage.setItem('token', response.data.token);
-        // Stockez les informations supplémentaires ici
-        localStorage.setItem('userInfo', JSON.stringify(response.data.user)); 
+        localStorage.setItem('userInfo', JSON.stringify(response.data.user));
     })
+    
+    
     .catch(error => {
         console.error('Login error:', error);
         toast.error('Invalid credentials. Please check your email and password.', {

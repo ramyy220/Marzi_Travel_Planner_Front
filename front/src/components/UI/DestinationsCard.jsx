@@ -4,9 +4,9 @@ import { Col } from 'reactstrap'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
-const DestinationsCard = ({item}) => {
+const DestinationsCard = ({item, isGreyedOut}) => {
   return (
-    <Col lg='3' md='4'> 
+    <Col lg='3' md='4' style={{ opacity: isGreyedOut ? 0.1 : 1 }}> 
         <div className="destination__item">
         <div className="destination__img">
             <motion.img whileHover={{scale: 1.1}} src={item.imgUrl} alt="destination" />

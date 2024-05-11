@@ -28,6 +28,9 @@ import destinationImg27 from "../images/destinationImg27.webp";
 import destinationImg28 from "../images/destinationImg28.webp";
 import destinationImg29 from "../images/destinationImg29.webp";
 import destinationImg30 from "../images/destinationImg30.webp";
+import destinationImg31 from "../images/destinationImg31.webp";
+import destinationImg32 from "../images/destinationImg32.webp";
+import destinationImg33 from "../images/destinationImg33.webp";
 
 const destinations = [
   {
@@ -389,7 +392,43 @@ const destinations = [
     rating: 4.6,
     price: 350,
     adventureType: "cultural"
-  }
+  },
+  {
+    id: "31",
+    destinationName: "Algiers",
+    imgUrl: destinationImg31,
+    country: "Algeria",
+    continent: "Africa",
+    category: "destinations",
+    description: "Algiers is the capital city of Algeria, known for its white buildings, vibrant streets, and a rich blend of French and Arab culture.",
+    rating: 4.5,
+    price: 280,
+    adventureType: "urban"
+  },
+  {
+    id: "32",
+    destinationName: "Oran",
+    imgUrl: destinationImg32,
+    country: "Algeria",
+    continent: "Africa",
+    category: "destinations",
+    description: "Oran is a major coastal city in Algeria, famous for its artistic vibe and historical architecture, including the Fort Santa Cruz.",
+    rating: 4.3,
+    price: 260,
+    adventureType: "cultural"
+  },
+  {
+    id: "33",
+    destinationName: "Tunis",
+    imgUrl: destinationImg33,
+    country: "Tunisia",
+    continent: "Africa",
+    category: "destinations",
+    description: "Tunis is the capital city of Tunisia, offering a mixture of ancient history and modern culture with its Medina and cosmopolitan areas.",
+    rating: 4.4,
+    price: 270,
+    adventureType: "urban"
+  },
 ];
 
 
