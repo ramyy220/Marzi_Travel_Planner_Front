@@ -4,6 +4,7 @@ import '../styles/questions.css';
 import destinations from '../assets/data/Destinations';
 import DestinationsCard from '../components/UI/DestinationsCard';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Questions = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -136,8 +137,12 @@ const Questions = () => {
                       ))}
                     </div>
                   </div>
-                    
-                    <button onClick={restartDescisionTree} className="mt-3">Restart</button>
+                  <div>
+                  <Link to="/login">
+                    <button className='btlog'>Pour voir toutes les destinations vous devez vous connecter </button>
+                  </Link>
+                   </div> 
+                    <button onClick={restartDescisionTree} className="bouton">Restart le questionaire </button>
                     
                   </div>
                 ) : (

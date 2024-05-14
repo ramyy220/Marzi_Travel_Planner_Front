@@ -49,7 +49,7 @@ const Home = () => {
   const [data, setData] = useState(destinations);
 
   useEffect(() => { 
-    const filteredData = destinations.filter(item => item.continent === 'Australia' || item.continent === 'North America' || item.continent === 'Africa' );
+    const filteredData = destinations.filter(item =>   item.continent === 'Africa' );
     setData(filteredData);
   },[]);
 
