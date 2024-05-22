@@ -2,6 +2,14 @@
 
 Ce projet est une application web développée avec React.js. Elle permet de faire une plaification de voyages sur mesure en répodant à des questions.
 
+
+
+
+https://github.com/ramyy220/Marzi_Travel_Planner_Front/assets/96258322/20c59bda-f695-4b64-be0e-60656aadb536
+
+
+
+
 ## Prérequis
 
 Pour exécuter ce projet, vous aurez besoin de Node.js et npm installés sur votre machine. Voici les étapes pour les installer si ce n'est pas déjà fait :
